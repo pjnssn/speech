@@ -99,3 +99,48 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# weights
+*.pt
+!model/saves/CNN_acc_97.46613545816733_loss_0.10099691163976582.pt
+!model/saves/CNN_pseudo_acc_97.41832669322709_loss_0.10287663502748152.pt
+
+# logs
+logs/*
+!logs/CNN_train_log.csv
+!logs/CNN_validation_log.csv
+!logs/CNN_pseudo_train_log.csv
+!logs/CNN_pseudo_validation_log.csv
+
+# data
+data/*
+!data/data_split.py
+!data/silences.txt
+!data/train.csv
+!data/validation.csv
+!data/test.csv
+
+# predictions
+predictions/*
+!predictions/predictions.csv
+!predictions/pseudo_predictions.csv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
