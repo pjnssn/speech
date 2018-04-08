@@ -201,8 +201,7 @@ train_logger = util.CSVLogger(args.save_prefix + "_train_log", ["epoch", "iterat
 validation_logger = util.CSVLogger(args.save_prefix + "_validation_log", ["epoch", "loss", "accuracy"])
 
 training_start = time.time()
-for epoch in range(epochs):
-    epoch += 1
+for epoch in range(1, epochs + 1):
     epoch_start = time.time()
 
     accuracy, loss = train(epoch)
